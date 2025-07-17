@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корзина - BURGER.ZONE</title>
+    <link rel="stylesheet" href="css/menu.css">
+</head>
+<body>
+    <header>
+    <div class="container">
+      <h1 class="logo">BURGER.ZONE</h1>
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="menu.html">Меню</a></li>
+          <li><a href="#">О нас</a></li>
+          <li><a href="contact.html">Контакты</a></li>
+          <li><a href="team.html">Команда</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+    <div id="cart">
+  <h2>🛒 Корзина (<span id="cart-counter">0</span>)</h2>
+  <div id="cart-items"></div>
+  <div id="cart-total">Общая сумма: 0 сум</div>
+  <button class="clear-cart-btn" onclick="clearCart()">Очистить корзину</button>
+</div>
+ 
+<script src="js/cart.js"></script>
+</body>
+</html>

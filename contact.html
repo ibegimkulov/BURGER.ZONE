@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Контакты | BURGER.ZONE</title>
+  <link rel="stylesheet" href="css/contact.css" />
+</head>
+<body>
+
+  <header>
+    <div class="logo">BURGER.<span>ZONE</span></div>
+    <nav>
+      <a href="index.html">Главная</a>
+      <a href="menu.html">Меню</a>
+      <a href="team.html">Команда</a>
+      <a href="contact.html" class="active">Контакты</a>
+    </nav>
+  </header>
+
+  <section class="contact-section">
+    <div class="container contact-container">
+      <h2>Связаться с нами</h2>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p><strong>📍 Адрес:</strong> Ташкент, ул. Вкусная, 12А</p>
+          <p><strong>📞 Телефон:</strong> <a href="tel:+998901234567">+998 (90) 123-45-67</a></p>
+          <p><strong>🕒 Время работы:</strong><br> Пн–Вс: 10:00 – 23:00</p>
+          <p><strong>📧 Email:</strong> <a href="mailto:info@burger.zone">info@burger.zone</a></p>
+        </div>
+
+        <form class="contact-form">
+          <input type="text" placeholder="Ваше имя" required />
+          <input type="email" placeholder="Ваш Email" required />
+          <textarea placeholder="Ваше сообщение" required></textarea>
+          <button type="submit">Отправить</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 BURGER.ZONE — Все права защищены.</p>
+  </footer>
+
+  <script>
+    const form = document.querySelector('.contact-form');
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      alert("Спасибо! Ваше сообщение отправлено.");
+      form.reset();
+    });
+  </script>
+
+</body>
+</html>

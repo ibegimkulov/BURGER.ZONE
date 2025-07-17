@@ -1,0 +1,234 @@
+body {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #ff5500;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 900;
+  color: #fff;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 10px;
+  list-style: none;
+  padding: 0;
+}
+
+.menu li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.menu li a:hover,
+.menu li a.active {
+  color: #ffc300;
+}
+
+.menu-section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.menu-section h2 {
+  font-size: 2.4rem;
+  color: #ff5500;
+  margin-bottom: 40px;
+}
+
+.menu-category h3 {
+  color: #ffc300;
+  font-size: 1.8rem;
+  margin: 40px 0 20px;
+}
+
+.menu-items {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.item {
+  background-color: #1a1a1a;
+  padding: 15px;
+  border-radius: 10px;
+  width: 220px;
+  box-shadow: 0 0 10px rgba(255, 85, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.item:hover {
+  transform: translateY(-5px);
+}
+
+.item img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.item h4 {
+  color: #ff6a00;
+  margin: 10px 0 5px;
+}
+
+.item p {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin-bottom: 5px;
+}
+
+.item span {
+  font-weight: bold;
+  color: #fff;
+}
+
+/* Footer */
+footer {
+  background-color: #111;
+  color: #aaa;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .menu-items {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .item {
+    width: 90%;
+  }
+
+  .menu {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+.category-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.category-buttons button {
+  background-color: #1a1a1a;
+  color: #fff;
+  border: 2px solid #ff5500;
+  padding: 8px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.category-buttons button:hover,
+.category-buttons button.active {
+  background-color: #ff5500;
+  color: #000;
+}
+
+.order-btn {
+  background-color: #ff5500;
+  color: #000;
+  border: none;
+  padding: 8px 16px;
+  margin-top: 10px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.order-btn:hover {
+  background-color: #ffc300;
+}
+
+/* Модалка */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.7);
+}
+
+.modal-content {
+  background-color: #fff;
+  color: #000;
+  margin: 15% auto;
+  padding: 20px;
+  width: 80%;
+  max-width: 400px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.close-btn {
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  font-size: 1.5rem;
+  color: #000;
+  cursor: pointer;
+}
+
+#cart {
+  background: #1a0000;
+  color: #fff;
+  padding: 1rem;
+  border: 2px solid #ff5500;
+  margin-top: 2rem;
+  border-radius: 10px;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+}
+
+.clear-cart-btn {
+  background-color: #ff5500;
+  color: #ffffff;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.clear-cart-btn:hover {
+  background-color: #cc4400;
+}
+
+.clear-cart-btn:active {
+  transform: scale(0.98);
+}

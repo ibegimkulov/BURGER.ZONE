@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Меню - BURGER.ZONE</title>
+    <link rel="stylesheet" href="css/menu.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="logo">BURGER.ZONE</h1>
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="menu.html">Меню</a></li>
+          <li><a href="#">О нас</a></li>
+          <li><a href="contact.html">Контакты</a></li>
+          <li><a href="team.html">Команда</a></li>
+          <li><a href="cart.html">Корзина</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section class="menu-section">
+  <div class="container">
+    <h2>Наше меню</h2>
+
+    <!-- Категории -->
+    <div class="category-buttons">
+      <button data-category="Все" class="active">Все</button>
+      <button data-category="Бургеры">Бургеры</button>
+      <button data-category="Гарниры">Гарниры</button>
+      <button data-category="Пицца">Пицца</button>
+      <button data-category="Напитки">Напитки</button>
+    </div>
+    <!-- Модальное окно -->
+<div id="order-modal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <h3>Ваш заказ принят!</h3>
+    <p id="order-message"></p>
+  </div>
+</div>
+
+
+    <div id="menu-container"></div>
+  </div>
+</section>
+
+<script src="js/menu.js"></script>
+<script src="js/cart.js"></script>
+</body>
+</html>

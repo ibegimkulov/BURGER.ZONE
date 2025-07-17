@@ -1,0 +1,126 @@
+body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ff5500;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: 900;
+    color: #fff;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.menu li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.menu li a:hover {
+    color: #ffc300;
+}
+
+.team {
+    padding: 60px 0;
+    text-align: center;
+    background-color: #000000;
+}
+
+.team h2 {
+    font-size: 2.4rem;
+    color: #ff5500;
+    margin-bottom: 40px;
+}
+
+.team-members {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.member {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 250px;
+    box-shadow: 0 0 10px rgba(255, 85, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.member:hover {
+    transform: translateY(-8px);
+}
+
+.member img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    background-color: #333;
+}
+
+.member h4 {
+    color: #ff6a00;
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+}
+
+.member p {
+    font-size: 0.95rem;
+    color: #cccccc;
+    margin-bottom: 8px;
+}
+
+footer {
+    background-color: #111111;
+    color: #777777;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 0.9rem;
+    border-top: 1px solid #222222;
+}
+
+@media (max-width: 768px) {
+    .team-members {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+.team h2 {
+  font-size: 2.4rem;
+  color: #ff5500;
+  margin: 60px 0 30px;
+}
+
+.team h2:first-of-type {
+  margin-top: 0;
+}
